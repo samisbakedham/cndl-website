@@ -1,15 +1,11 @@
 import { useLocation } from "react-router-dom";
-import { enablePageScroll } from "scroll-lock"; // No need for disablePageScroll since we removed nav
-import { background, openai } from "../assets";
-import Button from "./Button";
-import { useState } from "react";
+import { enablePageScroll } from "scroll-lock"; 
+import { openai } from "../assets";
 
 const Header = () => {
     const pathname = useLocation();
-    const [openNavigation, setOpenNavigation] = useState(false);
 
-    // Since we removed the navigation, we don't need toggle logic.
-    // Just ensure page scroll is enabled.
+    // Ensure page scroll is enabled at all times since no navigation is shown.
     enablePageScroll();
 
     return (
@@ -18,15 +14,6 @@ const Header = () => {
                 <a className="block w-[12rem] xl:mr-8" href="#hero">
                     <img src={openai} width={190} height={40} alt="Candle" />
                 </a>
-
-                {/* Removed nav and menu button */}
-
-                <a href="#signup" className="button hidden mr-8 text-white/50 transition-colors hover:text-white lg:block">
-                    New account
-                </a>
-                <Button className="hidden lg:flex" href="#login">
-                    Sign in
-                </Button>
             </div>
         </div>
     );
