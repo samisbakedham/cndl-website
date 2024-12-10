@@ -6,45 +6,45 @@ import { benefitIcon1, benefitIcon2, benefitIcon3, benefitIcon4, benefitImage2 }
 
 const benefits = [
     {
-        title: "Ask anything",
-        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+        title: "Seamless On-Chain Queries",
+        text: "Query Candle’s blockchain data instantly without navigating multiple on-chain explorers.",
         backgroundUrl: "./src/assets/benefits/card-1.svg",
         iconUrl: benefitIcon1,
         imageUrl: benefitImage2,
     },
     {
-        title: "Improve everyday",
-        text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+        title: "Enhanced Developer Tools",
+        text: "Leverage advanced tools and documentation to continually refine and scale your blockchain solutions.",
         backgroundUrl: "./src/assets/benefits/card-2.svg",
         iconUrl: benefitIcon2,
         imageUrl: benefitImage2,
         light: true,
     },
     {
-        title: "Connect everywhere",
-        text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+        title: "Global Accessibility",
+        text: "Interact with Candle’s blockchain from anywhere, on any device, ensuring accessibility and convenience.",
         backgroundUrl: "./src/assets/benefits/card-3.svg",
         iconUrl: benefitIcon3,
         imageUrl: benefitImage2,
     },
     {
-        title: "Fast responding",
-        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+        title: "High Throughput",
+        text: "Process transactions and queries at high speed without compromising network security or efficiency.",
         backgroundUrl: "./src/assets/benefits/card-4.svg",
         iconUrl: benefitIcon4,
         imageUrl: benefitImage2,
         light: true,
     },
     {
-        title: "Ask anything",
-        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+        title: "On-Chain Analytics",
+        text: "Gain actionable insights from on-chain activities, quickly and intuitively.",
         backgroundUrl: "./src/assets/benefits/card-5.svg",
         iconUrl: benefitIcon1,
         imageUrl: benefitImage2,
     },
     {
-        title: "Improve everyday",
-        text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+        title: "Constant Innovation",
+        text: "Harness continual upgrades and new features ensuring that Candle’s blockchain ecosystem evolves alongside your needs.",
         backgroundUrl: "./src/assets/benefits/card-6.svg",
         iconUrl: benefitIcon2,
         imageUrl: benefitImage2,
@@ -55,7 +55,7 @@ const Benefits = () => {
     return (
         <Section id="features">
             <div className="container relative z-2">
-                <Heading className="md:max-w-md lg:max-w-2xl" title="Chat Smarter, Not Harder with OpenAI" />
+                <Heading className="md:max-w-md lg:max-w-2xl" title="Build Smarter, Grow Faster with Candle" />
 
                 <div className="flex flex-wrap gap-10 mb-10">
                     {benefits.map((item, i) => (
